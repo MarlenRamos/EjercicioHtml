@@ -1,82 +1,187 @@
-/* === IMPORTANTE ===================================================
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap');
+
+  /* === IMPORTANTE ===================================================
    No modificar estos estilos, ya que son imprescindibles para
    que la pÃ¡gina se vea correctamente.
    ================================================================== */
 
-/*-- BÃ¡sico ----------------------------------------------------------*/
-/* ul, ul li { margin: 0; padding: 0; list-style: none; }
-h1, h2, h3, p, form { margin: 0; padding: 0; }
-.clear { clear: both; }
-img { border: none; } */
+  /*-- BÃ¡sico ----------------------------------------------------------*/
+  * {
+    font-family: "Raleway", "sans-serif";
+    /*font-weight: 500;*/
+  }
 
-/*-- Layout ----------------------------------------------------------*/
-#contenedor {
-  width: 90%;
-  max-width: 900px;
-  margin: 0 auto;
-}
+  ul,
+  ul li {
+    margin: 0 0 0 15px ;
+    padding: 0;
+    list-style: none;
+  }
 
+  h1,
+  h2,
+  h3,
+  p,
+  form {
+    /*margin: arriba, derecha, abajo, izquierda (de acuerdo con las manecillas del reloj)*/
+    margin: 0 0 0 15px;
+    padding: 0;
+  }
 
-#cabecera,
-#menu,
-#lateral,
-#contenido,
-#contenido #principal,
-#contenido #secundario,
-#pie {
-  border: 2px solid #777;
-}
+  h3 {
+    margin-top: 6px;
+  }
 
+  .clear {
+    clear: both;
+  }
 
-#cabecera {
-  clear: both;
-}
+  img {
+    border: none;
+    width: 150px;
+  }
 
-
-#menu {
-  clear: both;
-}
-
-#lateral {
-  float: left;
-  width: 20%;
-}
-
-#contenido {
-  float: right;
-  width: 78%;
-}
-
-#contenido #principal {
-  float: left;
-  width: 78%;
-}
-
-#contenido #secundario {
-  float: right;
-  width: 20%;
-}
-
-#pie {
-  clear: both;
-}
+  /*-- Layout ----------------------------------------------------------*/
+  #contenedor {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
 
 
-/*-- Cabecera --------------------------------------------------------*/
-/* #cabecera #logo { float: left; }
-#cabecera #buscador { float: right; } */
+  #cabecera,
+  #menu,
+  #lateral,
+  #contenido,
+  #contenido #principal,
+  #contenido #secundario,
+  #pie {
+    /*border: 2px solid #777;*/
+    padding: 8px 0 8px 0;
+  }
 
-/*-- Menu ------------------------------------------------------------*/
-/* #menu ul#menu_principal li { display: inline; float: left; } */
 
-/*-- SecciÃ³n Principal -----------------------------------------------*/
-/* #contenido #principal .articulo img { width: 100px; float: left; } */
+  #cabecera {
+    clear: both;
+  }
 
-/*-- Pie de pÃ¡gina ---------------------------------------------------*/
-/* #pie .enlaces   { float: left; }
-#pie .copyright { float: right; } */
 
-/* === IMPORTANTE ===================================================
-   A partir de aquÃ­, se pueden aÃ±adir todos los estilos propios que 
+  #menu {
+    clear: both;
+    border: color #004C99
+  }
+
+  #lateral {
+    float: left;
+    width: 20%;
+  }
+
+  #lateral #noticias {
+    border: 1px solid gray;
+  }
+
+  #lateral #publicidad {
+    margin-top: 15px;
+    border: 1px dotted #CC6600;
+    background-color: #FFF6CD;
+  }
+
+  #contenido {
+    float: right;
+    width: 78%;
+  }
+
+  #contenido #principal {
+    float: left;
+    width: 78%;
+  }
+
+  #contenido #secundario {
+    float: right;
+    width: 20%;
+    border: 1px solid #CC6600;
+    padding: 0 12px 0 0;
+  }
+
+  #pie {
+    clear: both;
+    color: #F8F8F8;
+    border: 1px #C5C5C5;
+  }
+
+
+
+
+
+  /*-- Cabecera --------------------------------------------------------*/
+  #cabecera #logo {
+    float: left;
+  }
+
+  #cabecera #buscador {
+    float: right;
+  }
+
+  /*-- Menu ------------------------------------------------------------*/
+  #menu ul#menu_principal li {
+    display: inline;
+    float: left;
+  }
+
+  #menu {
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/lernit-v2.appspot.com/o/assets%2Ffiles%2F1661998428764.gif?alt=media&token=fff46197-cd87-4034-94ed-91762884df13");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #menu #menu_principal {
+    text-align: center;
+  }
+
+  /* #menu #menu_principal li {
+    display: inline-block;
+  } */
+
+  #menu #menu_principal li a {
+    color: #ADD8E6;
+    display: inline-block;
+  }
+
+  /*-- SecciÃ³n Principal -----------------------------------------------*/
+  #contenido #principal .articulo img {
+    width: 100px;
+    float: left;
+  }
+
+  #noticias {
+    background-color: #F8F8F8;
+  }
+
+  #contenido #secundario h2 {
+    background-color: #DB905C;
+    padding: 0.2em;
+  }
+
+  /*-- Pie de pÃ¡gina ---------------------------------------------------*/
+  #pie .enlaces {
+    float: left;
+  }
+
+  #pie .copyright {
+    float: right;
+  }
+
+  /* === IMPORTANTE ===================================================
+   A partir de aquÃ­, se pueden aÃ±adir todos los estilos propios que
    sean necesarios.
    ================================================================== */
+
+  p {
+    margin-left: 15px;
+  }
+
+  img {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
